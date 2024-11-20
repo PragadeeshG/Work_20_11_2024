@@ -1,0 +1,16 @@
+create table if not exists data_governance_meta_history(
+history_date varchar(255) not null,
+governance_identifier varchar(255) null,
+success_policies varchar(255) null,
+dailure_poicies varchar(255) null,
+auto_complete varchar(255) null,
+requirements_met char null,
+cause_analysis varchar(255) null,
+plugins varchar(255) null,
+plugin_systems varchar(255) null,
+governance_type varchar(255) null,
+fix_done_for_future varchar(255) null,
+creation_date varchar(255) null,
+modified_date varchar(255) null,
+entity_state varchar(255) null,
+constraint data_governance_meta_history_pk primary key(history_date));
